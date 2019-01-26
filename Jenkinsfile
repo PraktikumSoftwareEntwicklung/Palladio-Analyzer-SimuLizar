@@ -2,7 +2,7 @@ pipeline {
     agent none
 
     options {
-        timeout(time: 30, unit: 'MINUTES')
+        timeout(time: 31, unit: 'MINUTES')
     }
     stages {
         stage('Build_Master') {
@@ -70,16 +70,5 @@ pipeline {
                 }
             }
         }
-        /*stage('Test') {
-                steps {
-                    //sh 'echo "Tests are disabled"'
-                    sh 'mvn test'
-                }
-                post {
-                    always {
-                        junit 'target/surefire-reports/*.xml'
-                    }
-                }
-        }*/
     }
 }
