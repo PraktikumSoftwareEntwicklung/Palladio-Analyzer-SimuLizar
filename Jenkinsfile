@@ -2,7 +2,7 @@ pipeline {
     agent none
 
     options {
-        timeout(time: 30, unit: 'MINUTES')
+        timeout(time: 31, unit: 'MINUTES')
     }
     stages {
         stage('Build_Master') {
