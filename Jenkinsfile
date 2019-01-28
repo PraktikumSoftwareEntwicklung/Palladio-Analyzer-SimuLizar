@@ -1,2 +1,2 @@
 @Library('SharedLibrary') _
-build.info 'Starting'
+build.call
