@@ -1,4 +1,4 @@
 @Library('SharedLibrary') _
-echo "testBranch"
+echo 'test non trusted'
 buildPipeline()
 
