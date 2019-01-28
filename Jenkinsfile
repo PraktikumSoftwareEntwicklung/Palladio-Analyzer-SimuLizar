@@ -1,2 +1,2 @@
 @Library('SharedLibrary') _
-buildPipeline.start
+buildPipeline
