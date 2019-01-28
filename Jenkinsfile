@@ -1,2 +1,1 @@
-library 'SharedLibrary'
-call()
+@Library('SharedLibrary') _
