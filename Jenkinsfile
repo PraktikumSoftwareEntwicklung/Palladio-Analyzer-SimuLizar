@@ -1,2 +1,2 @@
 @Library('SharedLibrary') _
-buildPipeline.call 'test'
+buildPipeline.call 'message'
