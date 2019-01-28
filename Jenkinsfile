@@ -1,3 +1,3 @@
 @Library('SharedLibrary')_
-pl = new pipeline()
-pl.test()
+pl = new build()
+pl.call()
