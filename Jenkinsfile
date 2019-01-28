@@ -1,2 +1,11 @@
 @Library('SharedLibrary') _
-buildPipeline.call 'test'
+pipeline {
+    agent none
+    stage ('Example') {
+        steps {
+             script { 
+                 build.info 'test'
+             }
+        }
+    }
+}
