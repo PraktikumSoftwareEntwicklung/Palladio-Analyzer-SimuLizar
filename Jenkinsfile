@@ -1,2 +1,2 @@
-library 'Sharedlibrary'
+library 'SharedLibrary'
 buildPipeline()
