@@ -1,2 +1,2 @@
-library 'SharedLibrary'
+@Library('SharedLibrary@master') _
 buildPipeline()
