@@ -70,7 +70,9 @@ pipeline {
                 }
                 stage('test') {
                     steps {
-                        sh 'ls'
+                        sh 'ls -a'
+                        sh 'ls -a target/'
+                        sh 'ls -a /home/jenkinsbuild/'
                     }
                 }
             }						
