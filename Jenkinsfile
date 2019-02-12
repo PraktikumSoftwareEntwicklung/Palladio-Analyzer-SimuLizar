@@ -86,6 +86,8 @@ pipeline {
     }
     post {
         always {
+            sh 'printenv'
+            sh 'ls -a'
             cleanWs()
             dir("${env.WORKSPACE}@tmp") {
               deleteDir()
