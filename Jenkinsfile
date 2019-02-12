@@ -72,7 +72,8 @@ pipeline {
                     steps {
                         sh 'ls -a'
                         sh 'ls -a target/'
-                        sh 'ls -a /home/jenkinsbuild/'
+                        sh 'ls -a .mvn/'
+                        sh 'ls -a features/'
                     }
                 }
             }						
