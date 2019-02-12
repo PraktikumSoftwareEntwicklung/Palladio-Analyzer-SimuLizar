@@ -56,12 +56,7 @@ pipeline {
                 }
             }
             stages {
-                stage('test') {
-                    steps {
-                        sh 'ls'
-                    }
-                }
-                /*stage('load_cache') {
+                stage('load_cache') {
                     steps {
                         sh 'printenv'
                         sh 'mkdir /home/jenkinsbuild/.m2/'
@@ -72,7 +67,12 @@ pipeline {
                     steps {
                         sh 'mvn -B -DskipTests clean package'
                     }
-                }*/
+                }
+                stage('test') {
+                    steps {
+                        sh 'ls'
+                    }
+                }
             }						
         }
     }
