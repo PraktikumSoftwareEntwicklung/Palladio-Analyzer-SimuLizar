@@ -63,11 +63,11 @@ pipeline {
                         sh 'cp -r /home/jenkinsbuild/tmp_cache/. /home/jenkinsbuild/.m2/'
                     }
                 }
-                stage('build') {
+                /*stage('build') {
                     steps {
                         sh 'mvn clean verify'
                     }
-                }
+                }*/
                 stage('test') {
                     steps {
                         sh 'ls -a'
