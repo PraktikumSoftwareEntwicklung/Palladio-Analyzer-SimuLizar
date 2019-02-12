@@ -71,12 +71,6 @@ pipeline {
                 stage('test') {
                     steps {
                         sh 'ls -a'
-                        sh 'ls -a target/'
-                        sh 'ls -a .mvn/'
-                        sh 'ls -a features/'
-                        sh 'ls -a features/target/'
-                        sh 'ls -a features/org.palladiosimulator.simulizar.feature/'
-                        sh 'ls -a target/targetPlatform.target'
                         sh 'printenv'
                         sh 'du -h'
                     }
