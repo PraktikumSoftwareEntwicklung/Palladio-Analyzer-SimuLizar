@@ -1,3 +1,8 @@
 @Library('SharedLibrary') _
-buildPipeline()
-//Trigger 3
+buildPipeline {
+    sshConfigName = 'updatesites.web.mdsd.tools'
+    absoluteWebserverDir = '/home/deploy/writable'
+    webserverDir = 'simulizar'
+	  updateSiteLocation = 'releng/org.palladiosimulator.simulizar.updatesite/target/repository'
+    skipCodeQuality = true
+}
