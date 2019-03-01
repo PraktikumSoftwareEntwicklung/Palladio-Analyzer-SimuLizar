@@ -5,4 +5,4 @@ buildPipeline {
     	webserverDir = 'simulizar'
 	updateSiteLocation = 'releng/org.palladiosimulator.simulizar.updatesite/target/repository'
 }
-//trigger 10
+//trigger 9
